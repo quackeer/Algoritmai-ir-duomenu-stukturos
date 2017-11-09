@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n=4;
+    int m=3;
+    int suma=0;
+    float vidurkis;
+    int mass[4][3]={{1,2,3},{4,2,8},{5,2,9},{14,8,9}};
+
+
+    for(int i=0;i<n;i++){
+        for(int j=0; j<m; j++){
+            cout<<"Masyvo elemento ["<<i<<"]["<<j<<"] skaicius yra "<<mass[i][j]<<endl;
+            suma=suma+mass[i][j];
+        }
+    }
+
+    vidurkis = (float)suma/(n*m);
+    cout<<"masyvu elementu suma: "<<suma<<"  masyvo elementu skaiciaus: "<<n*m<<" "<<endl;
+    cout<<"Vidrukis yra = "<<vidurkis<<endl;
+return 0;
+}
